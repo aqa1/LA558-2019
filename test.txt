@@ -1,1 +1,1 @@
-This is a test page
+This is a test page to be loaded into a browser window.
