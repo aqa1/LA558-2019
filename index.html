@@ -18,7 +18,8 @@
 
 
 $("#button2").click(function(){
-  $.getJSON("https://cjseeger.github.io/LA558/colorsJSON.json", function(result){
+	alert("load JSON");
+  $.getJSON("colorsJSON.json", function(result){
         $.each(result, function(i, field){
             $("#div2").append(field + " ");
         });
