@@ -4,10 +4,30 @@
   <meta charset="utf-8">
   <meta name="viewport" content="width=device-width">
   <title>JS Bin</title>
-</head>
+
 <script src="https://code.jquery.com/jquery-2.1.4.js"></script>
-	
-	
+	<script>
+	$(document).ready(function(){
+    $("#button1").click(function(){
+        //$("#div1").load("https://raw.githubusercontent.com/cjseeger/LA558/master/test");
+		
+		
+		$("#div1").load("https://cjseeger.github.io/LA558/test.txt?");
+    });
+});
+
+
+$("#button2").click(function(){
+  $.getJSON("https://cjseeger.github.io/LA558/colorsJSON.json", function(result){
+        $.each(result, function(i, field){
+            $("#div2").append(field + " ");
+        });
+    });
+});	
+		
+		
+	</script>
+</head>	
 	
 <body>
 Hello Class.<br>
@@ -23,7 +43,7 @@ Hello Class.<br>
 	
 	<br><br>
 	
-	<img src="https://github.com/cjseeger/LA558/blob/master/images/trike.jpg?raw=true" alt="trike" height="432" width="500">
+	<img src="https://cjseeger.github.io/LA558/images/trike.jpg" alt="trike" height="432" width="500">
 	
 </body>
 </html>
